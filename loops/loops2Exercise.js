@@ -44,19 +44,25 @@
 
 // console.log(min + ", " + minInd);
 
-// // TASK 4 NE ZNAM!
+// TASK 4
 
 // var arr = [4, 2, 2, -1, 6];
 // var min = arr[0];
-// var diff = 0;
+// var min2 = arr[0];
 
 // for (var i = 1; i < arr.length; i++) {
 //     if (arr[i] < min) {
 //         min = arr[i];
 //     }
+// } //DOBIO SAM MINIMUM!
+
+// for (var i = 1; i < arr.length; i++) {
+//     if (arr[i] < min2 && !(arr[i] === min)) {
+//         min2 = arr[i];
+//     }
 // }
 
-
+// console.log(min2);
 
 
 // // TASK 5
@@ -75,14 +81,16 @@
 // ------------------------------------------------------------------------
 // // TASK 6
 
-// var arr = [2, 4, -2, 7, -2, 4, 2];
-// var symmetric = true;
+// var arr = [3, 4, 4, 3];
+// var result = "The array is symmetric";
 
-// for (var i = 0, b = 1; i < arr.length; i++ , b++) {
-//     if (arr[i] === arr[arr.length - b]) {
-
+// for (var i = 0, b = arr.length - 1; i < b; i++ , b--) {
+//     if (arr[i] !== arr[b]) {
+//         result = "The array isn't symmetric";
 //     }
 // }
+
+// console.log(result);
 // ------------------------------------------------------------------------------
 
 // // TASK 7
@@ -98,48 +106,50 @@
 
 // console.log(arrRes);
 
-// // TASK 8   NE ZNAM!
+// // TASK 8 
 // // ------------------------------------------------------
 
 // var arr1 = [4, 5, 6, 2];
 // var arr2 = [3, 8, 11, 9];
 // var arrRes = [];
 
-// arrRes = arr1 + arr2;
+// for (var i = 0, j = arr1.length; i < arr1.length; i++ , j++) {
+//     arrRes[i] = arr1[i];
+//     arrRes[j] = arr2[i];
+// }
+
 // console.log(arrRes);
+
+
 // // --------------------------------------------------------------
 
 // // TASK 9 
 
 // var e = 2;
 // var a = [4, 6, 2, 8, 2, 2];
-// var resArr = a;
-// var finalRes = [];
+// var res = [];
 
-// for (var i = 0; i < a.length; i++) {
+// for (var i = 0, k = 0; i < a.length; i++ , k++) {
 //     if (a[i] === e) {
-//         delete resArr[i];
+//         k--;
+//         continue;
+//     } else {
+//         res[k] = a[i];
 //     }
 // }
 
-// for (var i = 0; i < a.length; i++) {
-//     if (typeof resArr[i] === "number") {
-//         finalRes[i] = resArr[i];
-//     }
-// }
+// console.log(res);
 
-// console.log(finalRes);
+// TASK 10
 
+var e = 78;
+var p = 3;
+var a = [2, -2, 33, 12, 5, 8];
+var res = [];
 
-// // TASK 10
+for (var i = 0; i < a.length; i++) {
+    if (i === p) {
 
-// -------------------------
-
-// var e = 78;
-// var p = 3;
-// var a = [2, -2, 33, 12, 5, 8];
-
-// a[p] = e;
-
-// console.log(a);
-// -----------------------------
+    }
+    res[i] = a[i];
+}
