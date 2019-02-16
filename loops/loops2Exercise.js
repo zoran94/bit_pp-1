@@ -148,7 +148,10 @@
 // var res = []; // result arr
 
 // for (var i = 0, j = 0; j < a.length; i++, j++) {
-//     if (i === p) {
+//     if (p > a.length) {
+//         res = "Error!";
+//         break;
+//     } else if (i === p) {
 //         res[i] = e;
 //         j--;
 //         continue;
