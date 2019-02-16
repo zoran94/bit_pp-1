@@ -54,7 +54,7 @@
 //     if (arr[i] < min) {
 //         min = arr[i];
 //     }
-// } //DOBIO SAM MINIMUM!
+// }
 
 // for (var i = 1; i < arr.length; i++) {
 //     if (arr[i] < min2 && !(arr[i] === min)) {
@@ -79,9 +79,9 @@
 // console.log(sum);
 
 // ------------------------------------------------------------------------
-// // TASK 6
+// TASK 6
 
-// var arr = [3, 4, 4, 3];
+// var arr = [3, 4, 4, 2];
 // var result = "The array is symmetric";
 
 // for (var i = 0, b = arr.length - 1; i < b; i++ , b--) {
@@ -140,16 +140,20 @@
 
 // console.log(res);
 
-// TASK 10
+// // TASK 10
 
-var e = 78;
-var p = 3;
-var a = [2, -2, 33, 12, 5, 8];
-var res = [];
+// var e = 78; // element
+// var p = 3; // index where to put
+// var a = [2, -2, 33, 12, 5, 8]; // arr
+// var res = []; // result arr
 
-for (var i = 0; i < a.length; i++) {
-    if (i === p) {
+// for (var i = 0, j = 0; j < a.length; i++, j++) {
+//     if (i === p) {
+//         res[i] = e;
+//         j--;
+//         continue;
+//     }
+//     res[i] = a[j];
+// }
 
-    }
-    res[i] = a[i];
-}
+// console.log(res);
