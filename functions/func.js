@@ -45,7 +45,24 @@
 
 // // TASK 5 - Write a program that draws a square of a given size.
 
+// function drawSquare(num) {
+//     var res = "";
+//     for (var i = 0; i < num; i++) {
+//         for (var j = 0; j < num; j++) {
+//             if (i === 0 || i === num - 1) {
+//                 res += "*";
+//             } else if (j === 0 || j === num-1){
+//                 res += "*";
+//             } else {
+//                 res += " ";
+//             }
+//         }
+//         res += "\n";
+//     }
+//     return res;
+// }
 
+// console.log(drawSquare(5));
 
 
 // // TASK 6 - Write a program that draws a horizontal chart representing three given values
