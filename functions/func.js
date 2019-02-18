@@ -47,19 +47,6 @@
 
 
 
-// function drawSquare(num) {
-//     var res = "";
-//     for (var i = 0; i < num; i++) {
-//         for (var j = 0; j < num; j++) {
-//             if (i === 0 || i === num - 1) {
-
-//             }
-//         }
-//     }
-// }
-
-// console.log(drawSquare(7));
-
 
 // // TASK 6 - Write a program that draws a horizontal chart representing three given values
 
