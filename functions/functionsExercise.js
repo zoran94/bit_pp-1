@@ -222,8 +222,21 @@
 
 
 
-// TASK 13 - Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
+// // TASK 13 - Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
 
-function humanizeNumber(num) {
+// function humanizeNumber(num) {
+//     var res = "";
+//     if (num % 100 === 1) {
+//         res += num + "st";
+//     } else if (num % 100 === 2) {
+//         res += num + "nd";
+//     } else if (num % 100 === 3) {
+//         res += num + "rd";
+//     } else {
+//         res += num + "th";
+//     }
+//     return res;
+// }
 
-}
+// var result = humanizeNumber(104);
+// console.log(result);
