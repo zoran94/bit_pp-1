@@ -120,9 +120,28 @@
 
 
 
-// TASK 8 - Write a function that accepts a number as a parameter and checks if the number is prime or not. 
-// Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. NOT DONE!
+// // TASK 8 - Write a function that accepts a number as a parameter and checks if the number is prime or not. 
+// // Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. NOT DONE!
 
+// function isPrime(num) {
+//     if (num === 1) {
+//         return false;
+//     } else if (num === 2) {
+//         return true;
+//     } else {
+
+//         for (var i = 2; i <= num; i++) {
+//             if (num % i === 0) {
+//                 return false;
+//             } else {
+//                 return true;
+//             }
+//         }
+//     }
+// }
+
+// var result = isPrime(17);
+// console.log(result);
 
 
 // // TASK 9 - Write a function that replaces spaces in a string with provided separator. If separator is not provided, use “-” (dash) as the default separator.
