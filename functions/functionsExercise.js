@@ -215,29 +215,38 @@
 
 // // TASK 12 - Write a function to calculate how many years there are left until retirement based on the year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is already retired, a proper message should be displayed.
 
-// function yearsRetirementLeft(yearOfB, sex, currYear) {
+function yearsRetirementLeft(yearOfB, sex, currYear) {
 
-//     currYear = currYear || 2019;
-//     var maleRetire = 65;
-//     var femaleRetire = 60;
-//     var age = currYear - yearOfB;
-//     var yearsLeft = 0;
+    currYear = currYear || 2019;
+    var maleRetire = 65;
+    var femaleRetire = 60;
+    var age = currYear - yearOfB;
+    var yearsLeft = 0;
 
-//     if (sex === "male") {
-
-//         yearsLeft = maleRetire - age;
-//         return yearsLeft;
+    if (sex === "male") {
 
 
-//     } else if (sex === "female") {
+        yearsLeft = maleRetire - age;
+        if (yearsLeft < 1) {
+            return "Already retired"
+        } else {
+            return yearsLeft;
+        }
 
-//         yearsLeft = femaleRetire - age;
-//         return yearsLeft;
-//     }
-// }
 
-// var result = yearsRetirementLeft(1994, "male", 2019);
-// console.log(result);
+    } else if (sex === "female") {
+
+        yearsLeft = femaleRetire - age;
+        if (yearsLeft < 1) {
+            return "Already retired"
+        } else {
+            return yearsLeft;
+        }
+    }
+}
+
+var result = yearsRetirementLeft(1994, "male", 2019);
+console.log(result);
 
 
 
