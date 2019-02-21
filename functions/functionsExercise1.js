@@ -173,9 +173,33 @@
 
 
 
-// TASK 9 - Write a function to hide email address.
+// // TASK 9 - Write a function to hide email address.
 
-// "myemailaddress@bgit.rs" -> "myemail...@bgit.rs"
+// // "myemailaddress@bgit.rs" -> "myemail...@bgit.rs"
+
+// function findIndexOfEm(email) {
+//     for (var i = 0; i < email.length; i++) {
+//         if (email[i] === "@") {
+//             return i;
+//         }
+//     }
+// }
+
+// function hideEmail(email) {
+//     var output = "";
+
+//     for (var i = 0; i < email.length; i++) {
+//         if (i >= findIndexOfEm(email)) {
+//             output += email[i];
+//             continue;
+//         }
+//         output += ".";
+//     }
+//     return output;
+// }
+
+// console.log(hideEmail("myemailaddress@bgit.rs"));
+
 
 
 
