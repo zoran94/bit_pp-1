@@ -138,3 +138,47 @@
 //Note: According to Wikipedia: In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself(also known as its aliquot sum).Equivalently, a perfect number is a number that is half the sum of all of its positive divisors(including itself).
 
 //E.g.: The first perfect number is 6, because 1, 2 and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: (1 + 2 + 3 + 6) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.
+
+
+
+// // TASK 8 - Write a function to find a word within a string.
+
+// // 'The quick brown fox', 'fox' -> "'fox' was found 1 times"
+// // 'aa, bb, cc, dd, aa', 'aa' -> "'aa' was found 2 times"
+
+
+// function timesWordInString(str, word) {
+//     var count = 0;
+//     var res = '';
+
+//     for (var i = 0, j = 0; i <= str.length; i++) {
+//         if (res === word) {
+//             count++;
+//             j = 0;
+//             res = '';
+//         }
+
+//         if (str[i] === word[j]) {
+//             res += str[i];
+//             j++;
+//         }
+//         continue;
+//     }
+
+//     return word + " was found " + count + " times";
+// }
+
+// var res = timesWordInString('The red foxfox is quicker than brown fox', 'fox');
+// console.log(res);
+
+
+
+// TASK 9 - Write a function to hide email address.
+
+// "myemailaddress@bgit.rs" -> "myemail...@bgit.rs"
+
+
+
+// TASK 10 - Write a program to find the most frequent item of an array.
+
+// [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
