@@ -123,3 +123,31 @@
 // }
 
 // console.log(findMaxNum(someElements));
+
+
+// // TASK 8 - Write a function to find the maximum and minimum elements. Function returns an array.
+
+// function minMax(arr) {
+//     var outputArr = [];
+//     var min = arr[0];
+//     var max = arr[0];
+
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         } else if (arr[i] < min) {
+//             min = arr[i];
+//         }
+//     }
+
+//     outputArr[0] = min;
+//     outputArr[1] = max;
+//     return outputArr;
+// }
+
+// var elements = [1, 6, -5, 10, 6];
+// var result = minMax(elements)
+// console.log(result);
+
+
+// TASK 9 - Write a function to find the median element of array.
