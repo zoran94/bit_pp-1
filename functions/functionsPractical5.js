@@ -116,6 +116,54 @@
 
 // console.log(nameGrade(names, gradeRange));
 
+// // TASK 4 - Sort a previously defined array. Place its sorted values into a new array whose values are equivalent to the first array's values multiplied by 2.
+// // Input: [ 13, 11, 15, 5, 6, 1, 8, 12 ]
+// // Output: [ 2, 10, 12, 16, 22, 24, 26, 30 ]
+
+// function sortArr(arr) {
+//     var outputArr = [];
+//     for (var i = 0; i < arr.length - 1; i++) {
+//         for (var j = 0; j < arr.length -1; j++) {
+//             var temp;
+//         if (arr[j] > arr[j+1]) {
+//             temp = arr[j];
+//             arr[j] = arr[j+1];
+//             arr[j+1] = temp;
+//                 }
+//             }   
+//         }
+//     outputArr = arr;
+//     for (var k = 0; k < outputArr.length; k++) {
+//         outputArr[k] = outputArr[k] * 2;
+//     }
+//     return outputArr;
+// }
+
+// console.log(sortArr([ 13, 11, 15, 5, 6, 1, 8, 12 ]));
+
+
+// // TASK 5 - (skip :))Sort a previously defined array in a descending order and display it in the console.
+// // Input:  [ 13, 11, 15, 5, 6, 1, 8, 12 ]
+// // Output: [ 15, 13, 12, 11, 8, 6, 5, 1 ]
+
+// function sortArr(arr) {
+//     var outputArr = [];
+//     for (var i = 0; i < arr.length - 1; i++) {
+//         for (var j = 0; j < arr.length -1; j++) {
+//             var temp;
+//         if (arr[j] < arr[j+1]) {
+//             temp = arr[j];
+//             arr[j] = arr[j+1];
+//             arr[j+1] = temp;
+//                 }
+//             }   
+//         }
+//     outputArr = arr;
+//     return outputArr;
+// }
+
+// console.log(sortArr([ 13, 11, 15, 5, 6, 1, 8, 12 ]));
+
 
 // // TASK 6 - Write a program that uses a loop to add all the even numbers from 1 to 1000 and subtracts all the odd numbers 1 to 500 from the calculated sum.The result should then be multiplied by 12.5 and displayed in console.
 // // Output: 2350000
