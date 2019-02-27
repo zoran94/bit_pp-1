@@ -85,26 +85,25 @@
 
 // // TASK 5 - Write a program that prints a multiplication table for numbers up to 12.
 
-// function multiplicationTable(num) {
-//     var outputArr = "";
-//     for (var i = 1; i <= num; i++) {
-//         for (var j = 1; j <= num; j++) {
-//             var tempRes = "" + j * i;
-//             if (tempRes.length === 1) {
-//                 outputArr += "| " + j * i + " | ";
+function multiplicationTable(num) {
+    var outputArr = "";
+    for (var i = 1; i <= num; i++) {
+        for (var j = 1; j <= num; j++) {
+            var tempRes = "" + j * i;
+            if (tempRes.length === 1) {
+                outputArr += "| " + j * i + " | ";
+            } else if (tempRes.length === 2) {
+                outputArr += "| " + j * i + "| ";
+            } else {
+                outputArr += "|" + j * i + "| ";
+            }
+        }
+        outputArr += "\n";
+    }
+    return outputArr;
+}
 
-//             } else if (tempRes.length === 2) {
-//                 outputArr += "| " + j * i + "| ";
-//             } else {
-//                 outputArr += "|" + j * i + "| ";
-//             }
-//         }
-//         outputArr += "\n";
-//     }
-//     return outputArr;
-// }
-
-// console.log(multiplicationTable(12));
+console.log(multiplicationTable(12));
 
 
 // // TASK 6 - Write a function to input temperature in Centigrade and convert to Fahrenheit.
@@ -311,55 +310,55 @@
 // console.log(bmi(83, 175));
 
 
-// TASK 15 - Write a function that takes a list of strings and prints them, one per line, in a rectangular frame.:
+// // TASK 15 - Write a function that takes a list of strings and prints them, one per line, in a rectangular frame.:
 
-// For example the list["Hello", "World", "in", "a", "frame"] gets printed as:
-// *********
-// * Hello *
-// * World *
-// * in    *
-// * a     *
-// * frame *
-// *********
+// // For example the list["Hello", "World", "in", "a", "frame"] gets printed as:
+// // *********
+// // * Hello *
+// // * World *
+// // * in    *
+// // * a     *
+// // * frame *
+// // *********
 
-function charLongestWord(arr) {
-    var count = 0;
-    var finCount = 0;
+// function charLongestWord(arr) {
+//     var count = 0;
+//     var finCount = 0;
 
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = 0; j < arr[i].length; j++) {
-            count++;
-        }
-        if (count > finCount) {
-            finCount = count;
-            count = 0;
-        } else {
-            count = 0;
-        }
-    }
-    return finCount;
-}
-
-
-function printRect(arr) {
-    var longestWordNum = charLongestWord(arr);
-    var firstLast = "";
-    var outputStr = "";
-
-    for (var i = 0; i < longestWordNum + 4; i++) {
-        for (var j = -1; j < arr.length + 1; j++) {
-            if (j === -1 || j === arr.length) {
-                outputStr += firstLast + "\n";
-            } else {
-                outputStr += "* " + arr[j] + "\n";
-            }
-        }
-        // firstLast += "*";
-    }
+//     for (var i = 0; i < arr.length; i++) {
+//         for (var j = 0; j < arr[i].length; j++) {
+//             count++;
+//         }
+//         if (count > finCount) {
+//             finCount = count;
+//             count = 0;
+//         } else {
+//             count = 0;
+//         }
+//     }
+//     return finCount;
+// }
 
 
+// function printRect(arr) {
+//     var longestWordNum = charLongestWord(arr);
+//     var firstLast = "";
+//     var outputStr = "";
 
-    return outputStr;
-}
+//     for (var i = 0; i < longestWordNum + 4; i++) {
+//         for (var j = -1; j < arr.length + 1; j++) {
+//             if (j === -1 || j === arr.length) {
+//                 outputStr += firstLast + "\n";
+//             } else {
+//                 outputStr += "* " + arr[j] + "\n";
+//             }
+//         }
+//         // firstLast += "*";
+//     }
 
-console.log(printRect(["Hello", "World", "in", "a", "frame"]));
+
+
+//     return outputStr;
+// }
+
+// console.log(printRect(["Hello", "World", "in", "a", "frame"]));
