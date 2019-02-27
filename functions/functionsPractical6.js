@@ -195,7 +195,7 @@ console.log(multiplicationTable(12));
 
 // // TASK 10 - Write a function to find the element that occurs most frequently.
 
-// var example = [1, 1, 8, 9, 5, 3, 4, 5, 5, 5, 1, 1, 1, 1, 1, 1];
+// var example = [1, 1, 8, 9, 5, 3, 4, 5, 5, 5, 1, 1, 1, 1, 1, 5];
 
 // function mostFrequent(arr) {
 //     var elIndex = 0;
@@ -212,6 +212,7 @@ console.log(multiplicationTable(12));
 //             completeCount = count;
 //             elIndex = i;
 //         }
+//         count = 0;
 //     }
 
 //     return arr[elIndex];
