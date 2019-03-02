@@ -107,3 +107,54 @@
 
 // myRecipe.deleteIng("eggs");
 // console.log(myRecipe.listOfIngredients);
+
+
+// // TASK 4 - The same
+
+// function CreateRecipe(n, t, compl, list, ptime, pinst) {  
+//     this.name = n,
+//     this.typeOfCuisine = t,
+//     this.complexity = compl,
+//     this.listOfIngredients = list,
+//     this.preparingTime = ptime,
+//     this.preparingInstructions = pinst,
+//     this.printIngredients = function () {
+//         console.log(this.listOfIngredients);
+//     },
+
+//     this.in15Min = function () {
+//         if (this.preparingTime < 16) {
+//             console.log("It can be prepared in 15 minutes");
+//         } else {
+//             console.log("No it cant be prepared in 15 minutes");
+//         }
+//     },
+
+//     this.changeCuisine = function (a) {
+//         this.typeOfCuisine = a;
+//     },
+
+//     this.deleteIng = function (ingred) {
+//         var outputArr = [];
+//         for (var i = 0; i < this.listOfIngredients.length; i++) {
+//             if (this.listOfIngredients[i] === ingred) {
+//                 continue;
+//             }
+//              outputArr[outputArr.length] = this.listOfIngredients[i];
+//         }
+//         this.listOfIngredients = outputArr;
+//     }   
+// }
+
+// var myRecipe = new CreateRecipe("Sapke", "French", 5, ["eggs", "milk"], 10, "Boil eggs and add milk!");
+// console.log(myRecipe);
+
+// myRecipe.printIngredients();
+// myRecipe.in15Min();
+
+// console.log(myRecipe.typeOfCuisine);
+// myRecipe.changeCuisine("Italian")
+// console.log(myRecipe.typeOfCuisine);
+
+// myRecipe.deleteIng("eggs");
+// console.log(myRecipe.listOfIngredients);
