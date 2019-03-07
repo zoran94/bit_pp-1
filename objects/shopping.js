@@ -13,12 +13,12 @@ function Product(name, price, expDate) {
 function ShoppingBag() {
     this.products = [];
     this.addProduct = function (prod) {
-        if ((prod.expirationDate - new Date()) > 0) {
-            this.products.push(prod);
-        } else {
-            return "Expiration date passed!";
-        }
-    },
+            if ((prod.expirationDate - new Date()) > 0) {
+                this.products.push(prod);
+            } else {
+                return "Expiration date passed!";
+            }
+        },
 
         this.avgPriceOfProducts = function () {
             var sum = 0;
