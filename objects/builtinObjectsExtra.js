@@ -173,3 +173,178 @@
 // console.log(totalPrice(products));
 // console.log(avgPrice(products));
 // console.log(mostExpensiveProduct(products));
+
+
+// // TASK 7a - Write a
+// // function that checks
+// // if a given string is written in all capitals.
+
+// function isUpper(str) {
+//     var copyStr = str.slice().toUpperCase();
+
+//     for (var i = 0; i < str.length; i++) {
+//         var element = str[i];
+//         if (element === copyStr[i]) {
+//             continue;
+//         } else {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// console.log(isUpper('NENAD'));
+
+
+// TASK 7 b - Write a
+// function that checks
+// if a given string contains any digits.
+
+// function anyDigit(str) {
+//     for (var i = 0; i < str.length; i++) {
+//         var element = str[i];
+//         if (parseInt(element)) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// console.log(anyDigit('Hello it\'s me'));
+
+
+// TASK 7 c - Write a
+// function that checks
+// if a given string is a valid hexadecimal color.
+
+// function isValidHexColor(str) {
+//     var strCopy = str.toLowerCase();
+//     var hex = 'abcdef';
+//     var nums = '0123456789';
+
+//     if (strCopy[0] !== '#') {
+//         return false;
+//     }
+
+//     for (var i = 1; i < strCopy.length; i++) {
+//         var element = strCopy[i];
+//         if (hex.indexOf(element) > 0 || nums.indexOf(element) > 0) {
+//             continue;
+//         } else {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(isValidHexColor('#FF22J0'));
+
+
+// // TASK 7 d - Write a
+// // function that checks
+// // if a given number belongs to the interval from 1900 to 2018.
+
+// function belongInterval(num) {
+//     if (num < 2019 && num > 1899) {
+//         return true;
+//     }
+//     return false;
+// }
+
+// console.log(belongInterval(1994));
+
+
+// // TASK 7 e - Write function named validator that returns an object with properties stringValidator, passwordValidator, colorValidator, and yearValidator referencing the functions from a) to d).
+
+// function validator() {
+//     return {
+//         stringValidator: isUpper,
+//         passwordValidator: anyDigit,
+//         colorValidator: isValidHexColor,
+//         yearValidator: belongInterval,
+//     }
+// }
+
+// console.log(validator());
+
+
+// TASK 8 - Write a
+// function that calculates a number of days to your birthday.
+// Input: 25 February
+// Output: 5 days
+
+// TASK 9 - Write a function that
+// for a given departure and arrival time calculates the time the trip takes.
+// Input: 8: 22: 13 11: 43: 22
+// Output: 3 hours 21 minutes 9 seconds
+
+// // TASK 10 - Write a constructor
+// // function that creates points in space.Each point in space has its own x, y, and z coordinate.For example, (3, 5, 1) can be a point in space.
+
+
+// // Write a
+// // function that calculates the distance between two points in the space.
+// // Assuming all positives x and y
+
+// function Point(x, y) {
+//     this.x = x;
+//     this.y = y;
+// }
+
+// function calculateDistance(p1, p2) {
+//     var a = p2.y - p1.y;
+//     var b = p2.x - p1.x;
+//     return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+// }
+
+// var point1 = new Point(0, 0);
+// var point2 = new Point(2, 2);
+
+// console.log(calculateDistance(point1, point2));
+
+
+// // TASK 11 - Write a
+// // function that generates a random integer value between 5 and 20.
+// // Write a
+// // function that generates a random integer value between 50 and 100.
+// // Write a
+// // function which expects a number and a callback generator
+// // function and returns an array of numbers produced by the generator
+// // function.
+
+// function random5to20() {
+//     return Math.floor(Math.random() * 16 + 5);
+// }
+
+// function random50to100() {
+//     return Math.floor(Math.random() * 51 + 50);
+// }
+
+// function generateNumbers(num, func) {
+//     var output = [];
+//     for (var i = 0; i < num; i++) {
+//         output.push(func());
+//     }
+//     return output;
+// }
+
+// console.log(generateNumbers(10, random50to100));
+
+
+// // TASK 12 - Write a
+// // function that shuffles the elements of a given array.
+// // Input: [3, 6, 11, 2, 9, 1]
+// // Output: [6, 2, 9, 1, 3, 11](it can be any random permutation of the given array)
+
+// function shuffle(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         var randomIndex = Math.floor(Math.random() * arr.length);
+//         var temp = arr[randomIndex];
+//         arr[randomIndex] = arr[i];
+//         arr[i] = temp;
+//     }
+//     return arr;
+// }
+
+// console.log(shuffle([3, 6, 11, 2, 9, 1]));
