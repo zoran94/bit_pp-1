@@ -43,16 +43,20 @@ function Flight(relation, date) {
 
     this.addPassenger = function (pass) {
         var numArr = [];
+        var names = [];
 
         for (var i = 0; i < this.listOfPassengers.length; i++) {
             var element = this.listOfPassengers[i];
             numArr.push(element.seat.number);
+            names.push(element.person.getData());
         }
 
         if (this.listOfPassengers.length > 100) {
             return console.log('There are no free seats!');
         } else if (numArr.indexOf(pass.seat.number) > -1) {
             return console.log('Seat is already taken');
+        } else if (names.indexOf(pass.person.getData) > -1) {
+
         } else {
             this.listOfPassengers.push(pass);
         }
@@ -152,12 +156,14 @@ var main = (function () {
     var john = createPassenger('John', 'Snow', 1, 'b');
     var cersei = createPassenger('Cersei', 'Lannister', 2, 'b');
     var daenerys = createPassenger('Daenerys', 'Targaryen', 14);
+    var daenerys1 = createPassenger('Daenerys', 'Targaryen', 15);
     var tyrion = createPassenger('Tyrion', 'Lannister');
 
     belgradeNy.addPassenger(john);
     belgradeNy.addPassenger(cersei);
 
     barcelonaBg.addPassenger(daenerys);
+    barcelonaBg.addPassenger(daenerys1);
     barcelonaBg.addPassenger(tyrion);
 
     nikolaTesla.addFlight(belgradeNy);
