@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 50%;
+}
+
+label {
+    margin: 10px;
+    display: block;
+}
+
+input {
+    padding: 5px;
+    padding-left: 15px;
+    margin: 10px auto;
+    display: block;
+    width: 97%;
+}
+
+select {
+    display: block;
+    margin: 20px auto;
+    width: 97%;
+    background: lightgray;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+button {
+    width: 97%;
+    margin: 10px auto;
+    display: block;
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.movies-list {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding-left: 10px;
+}
